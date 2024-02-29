@@ -1,0 +1,6 @@
+bgu\spl\net\impl\echo\EchoProtocol.class
+bgu\spl\net\api\MessagingProtocol.class
+bgu\spl\net\impl\echo\EchoClient.class
+bgu\spl\net\impl\echo\LineMessageEncoderDecoder.class
+bgu\spl\net\api\MessageEncoderDecoder.class
+bgu\spl\net\impl\tftp\TftpClient.class
