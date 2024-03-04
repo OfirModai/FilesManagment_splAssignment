@@ -13,17 +13,23 @@ public class TftpEncoderDecoder implements MessageEncoderDecoder<byte[]> {
 
     @Override
     public byte[] decodeNextByte(byte nextByte) {
-        if (nextByte == 0) {
-            bytes.add(nextByte);
-            return Util.convertListToArray(bytes);
-        }
         bytes.add(nextByte);
-        return null;
+        byte[] retBytes = null;
+        if (nextByte == 0 | bytes.size() == 512) { //should end msg
+            retBytes = Util.convertListToArray(bytes);
+            bytes = new LinkedList<>();
+        }
+        return retBytes;
     }
 
     @Override
-    public byte[] encode(byte[] message) {
-        return (message + "0").getBytes(StandardCharsets.UTF_8);
+    public byte[] encode(byte[] message) throws IllegalArgumentException {
+        if (message.length >= 512)
+            throw new IllegalArgumentException ("msg over 512 bytes");
+        byte[] resByte = new byte[message.length + 1];
+        System.arraycopy(message, 0, resByte, 0, message.length);
+        resByte[resByte.length - 1] = 0;
+        return resByte;
     }
 
 }

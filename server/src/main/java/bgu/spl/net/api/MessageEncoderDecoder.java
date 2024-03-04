@@ -17,6 +17,6 @@ public interface MessageEncoderDecoder<T> {
      * @param message the message to encode
      * @return the encoded bytes
      */
-    byte[] encode(T message);
+    byte[] encode(T message) throws IllegalArgumentException;
 
 }
