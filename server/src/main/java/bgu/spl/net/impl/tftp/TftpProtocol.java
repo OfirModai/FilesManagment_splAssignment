@@ -5,8 +5,6 @@ import bgu.spl.net.api.BidiMessagingProtocol;
 import bgu.spl.net.srv.BaseConnections;
 import bgu.spl.net.srv.BlockingConnectionHandler;
 import bgu.spl.net.srv.Connections;
-import com.sun.org.apache.xml.internal.security.algorithms.implementations.IntegrityHmac;
-import com.sun.tools.jdi.Packet;
 
 import java.net.DatagramPacket;
 import java.net.Socket;
@@ -59,10 +57,10 @@ public class TftpProtocol implements BidiMessagingProtocol<byte[]> {
     }
 
     // message is after decode
-    private Packet LogRQ(byte[] message) {
+    private Object LogRQ(byte[] message) {
         String userName = new String(message);
         int connectionId = userName.hashCode();
-        Packet packet = null;
+        Object packet = null;
         if (connections.canConnect(connectionId)) {
             BlockingConnectionHandler<byte[]> blockingConnectionHandler = new BlockingConnectionHandler<>(
                     new Socket(), new TftpEncoderDecoder(), new TftpProtocol(connectionId, connections));

@@ -1,5 +1,7 @@
 package bgu.spl.net.impl.tftp;
 
 public class TftpServer {
-    //TODO: Implement this
+    public static void main(String[] args) {
+        // Your main code here
+    }
 }
