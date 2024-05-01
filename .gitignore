@@ -96,6 +96,11 @@ fabric.properties
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 
-#targets
-server/target
-client/target
+# Project exclude paths
+/client/target/
+/server/target/
+
+# files that can be large:
+#/server/Files
+#/client/Files
+#**/Files/

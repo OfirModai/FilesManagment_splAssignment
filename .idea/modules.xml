@@ -3,10 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Skeleton.iml" filepath="$PROJECT_DIR$/.idea/Skeleton.iml" />
-      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Skeleton/client/client (1).iml" filepath="$PROJECT_DIR$/Skeleton/client/client (1).iml" />
-      <module fileurl="file://$PROJECT_DIR$/server/server.iml" filepath="$PROJECT_DIR$/server/server.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Skeleton/server/server (1).iml" filepath="$PROJECT_DIR$/Skeleton/server/server (1).iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteTargetsManager">
+    <option name="projectDefaultTargetUuid" value="69e1dc86-405f-4848-ba2e-a3ac3b1e4b10" />
+    <targets>
+      <target name="WSL - Ubuntu" type="wsl" uuid="69e1dc86-405f-4848-ba2e-a3ac3b1e4b10">
+        <config>
+          <option name="distributionMsId" value="Ubuntu" />
+          <option name="projectRootOnTarget" value="{exitCode=0, timeout=false, cancelled=false, stdout=/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2023.3.6/jbr/bin&#10;, stderr=}/spl_ex3" />
+        </config>
+        <ContributedStateBase type="MavenRuntime">
+          <config>
+            <option name="homePath" value="/opt/apache-maven-3.9.6" />
+            <option name="versionString" value="3.9.6" />
+          </config>
+        </ContributedStateBase>
+      </target>
+    </targets>
+  </component>
+</project>

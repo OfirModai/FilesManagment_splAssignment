@@ -1,3 +1,4 @@
+/*
 package bgu.spl.net.impl.echo;
 
 import bgu.spl.net.api.MessageEncoderDecoder;
@@ -42,3 +43,5 @@ public class LineMessageEncoderDecoder implements MessageEncoderDecoder<String> 
         return result;
     }
 }
+
+*/

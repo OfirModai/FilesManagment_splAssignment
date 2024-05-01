@@ -8,15 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="client" />
         <module name="server" />
-        <module name="server (1)" />
-        <module name="client (1)" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="client" target="1.8" />
-      <module name="client (1)" target="1.8" />
-      <module name="server" target="1.8" />
-      <module name="server (1)" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>

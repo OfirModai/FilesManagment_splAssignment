@@ -9,7 +9,7 @@ public interface MessageEncoderDecoder<T> {
      * message
      * @return a message if this byte completes one or null if it doesnt.
      */
-    T decodeNextByte(byte nextByte);
+    byte[] decodeNextByte(byte nextByte);
 
     /**
      * encodes the given message to bytes array
