@@ -1,3 +1,4 @@
 # FilesManagment
-Server holding files, and clients interacting with him, including:
-log in, downloading and uploading files and few more actions
+Server holds files, and clients interacting with him, including: logging in, downloading and uploading files, and a few more actions
+
+
