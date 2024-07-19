@@ -1,4 +1,3 @@
-# spl_ex3
-Communication
-transferred to:
-https://github.com/Omerba31/spl_ex3.git
+# FilesManagment
+Server holding files, and clients interacting with him, including:
+log in, downloading and uploading files and few more actions
